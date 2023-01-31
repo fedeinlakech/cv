@@ -1,0 +1,170 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin-block: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 1.2rem auto 3rem auto;
+}
+
+section:hover {
+  background-color: aquamarine;
+  transition: 0.5s ease-in;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+img {
+  height: 15rem;
+  width: auto;
+  border-radius: 50%;
+  border: solid 7px #ec7113;
+}
+
+h1 {
+  color: #ec7113;
+}
+
+h2 {
+  color: #e2c02a;
+  margin-top: 1.3rem;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+i {
+  color: #e2c02a;
+}
+
+.redes a {
+  margin: 0 .5rem;
+}
+
+.mail {
+  text-decoration: underline;
+}
+
+.fa-location-dot,
+.fa-envelope {
+  margin-right: 0.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #e2c02a;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 0.5rem solid #ec7113;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  p,
+  li {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "H H X"
+      "Y Y C"
+      "E E L"
+      "I I L"
+      "T T L";
+    column-gap: 3rem;
+  }
+
+  #header {
+    grid-area: H;
+    flex-direction: column;
+  }
+
+  img {
+    height: 25rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  .redes a {
+    font-size: 1.8rem;
+  }
+
+  #yo {
+    grid-area: Y;
+  }
+
+  #educacion {
+    grid-area: E;
+  }
+
+  #cursos {
+    grid-area: C;
+  }
+
+  #lenguajes {
+    grid-area: L;
+  }
+
+  #experiencia {
+    grid-area: X;
+    align-self: flex-end;
+  }
+
+  #idiomas {
+    grid-area: I;
+  }
+
+  #intereses {
+    grid-area: T;
+  }
+
+  #yo p {
+    margin-bottom: 1rem;
+  }
+}
